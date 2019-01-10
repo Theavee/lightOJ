@@ -1,5 +1,4 @@
-times = int(input())
+n = int(input())
+arr = list(map(int, input().rstrip().split()))
 
-for i in range(times):
-    line = input()
-    print(''.join(reversed(line)))
+print(' '.join(str(x) for x in arr[::-1]))
